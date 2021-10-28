@@ -1,0 +1,56 @@
+# Listing of Parameters
+# ---------------------
+subsection A - Base Parameter
+  # base name for all output files
+  set basename           = nanotubes
+
+  # initial resolution
+  set initial resolution = 9
+
+  # number of adaption cycles
+  set number of cycles   = 1
+
+  # maximal angular frequency
+  set omega max          = 1.0
+
+  # minimal angular frequency
+  set omega min          = 0.1
+end
+
+
+subsection B - Coefficients
+  # Relative permittivity for material id 1.
+  set material 1 epsilon = 1, 0
+
+  # Relative permittivity for material id 2.
+  set material 2 epsilon = 1, 0
+
+  # Angular frequency.
+  set omega              = 0.4, 0
+
+  # Relaxation time.
+  set tau                = 243, 0
+end
+
+
+subsection C - Discretization
+  # Geometry to use, valid options are "circle", and "ribbons"
+  set geometry             = circle
+
+  # Initial refinement of the geometry
+  set initial refinement   = 6
+
+  # Order of the finite element space
+  set order finite element = 1
+
+  # Order of the mapping
+  set order mapping        = 1
+
+  # Order of the quadrature rule
+  set order quadrature     = 3
+
+  # Radius of inner circle
+  set radius               = 0.3
+end
+
+

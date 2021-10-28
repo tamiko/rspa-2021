@@ -1,0 +1,45 @@
+# Listing of Parameters
+# ---------------------
+subsection A - Base Parameter
+  # base name for all output files
+  set basename = nanotubes
+end
+
+
+subsection C - Discretization
+  # Geometry to use, valid options are "circle", and "ribbons"
+  set geometry             = circle
+
+  # Initial refinement of the geometry
+  set initial refinement   = 7
+
+  # Order of the finite element space
+  set order finite element = 1
+
+  # Order of the mapping
+  set order mapping        = 1
+
+  # Order of the quadrature rule
+  set order quadrature     = 3
+
+  # Radius of inner circle
+  set radius               = 0.2
+end
+
+
+subsection D - CellProblem
+  # Moebius transform: parameter a
+  set moebius a             = 1.0  # default: 1
+
+  # Moebius transform: parameter b
+  set moebius b             = -0.6 # default: 0
+
+  # Moebius transform: parameter c
+  set moebius c             = 0.0  # default: 0
+
+  # Moebius transform: parameter d
+  set moebius d             = 1.0  # default: 1
+  set number of eigenvalues = 200  # default: 10
+end
+
+
